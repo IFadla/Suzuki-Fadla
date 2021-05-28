@@ -95,16 +95,11 @@ export default {
 @import "@/assets/styles/_variables.scss";
 
 header {
-  border: 1px solid magenta;
+  // border: 1px solid magenta;
   position: relative;
-  // overflow: hidden;
-
-  // &.headerShow {
-  //   overflow: visible;
-  // }
 
   .overlay {
-    position: absolute;
+    position: fixed;
     width: 100vw;
     height: 100vh;
     top: 0;
@@ -211,7 +206,7 @@ header {
       width: 80vw;
       height: 100vh;
       background-color: $white;
-      position: absolute;
+      position: fixed;
       top: 0;
       // left: 0;
       right: 0;
