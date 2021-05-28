@@ -21,11 +21,11 @@
       <div class="navbar__list" :class="{ listShow: isShowList }">
         <div class="navbar__menu">
           <div class="navbar__items">
-            <router-link to="/outlet" class="navbar__link" @click="showList">
+            <router-link to="/" class="navbar__link" @click="showList">
               <p>Beranda</p>
             </router-link>
 
-            <router-link to="/" class="navbar__link" @click="showList">
+            <router-link to="/outlet" class="navbar__link" @click="showList">
               <p>Tentang Kami</p>
             </router-link>
 
@@ -96,14 +96,19 @@ export default {
 
 header {
   // border: 1px solid magenta;
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: $white;
+  z-index: 1;
 
   .overlay {
     position: fixed;
-    width: 100vw;
+    width: 0;
     height: 100vh;
     top: 0;
-    left: 0;
+    // left: 0;
     right: 0;
     bottom: 0;
     background-color: unset;
@@ -112,7 +117,8 @@ header {
   }
 
   .overlayShow {
-    background-color: $shadow1;
+    width: 100vw;
+    background-color: $shadow2;
     z-index: 1;
   }
 
@@ -121,8 +127,9 @@ header {
     padding: 0.8rem 1rem;
     display: flex;
     justify-content: space-between;
-    box-shadow: 0px 2px 15px $shadow;
+    box-shadow: 0px 2px 15px $shadow1;
     position: relative;
+    height: 62px;
 
     &__link {
       text-decoration: none;
@@ -136,7 +143,7 @@ header {
       img {
         width: 30px;
         height: 36px;
-        margin-right: 0.5rem;
+        margin-right: 0.8rem;
       }
 
       .navbar__title {
@@ -161,6 +168,10 @@ header {
       align-items: center;
       z-index: 2;
       overflow: hidden;
+      cursor: pointer;
+      position: fixed;
+      right: 1rem;
+      top: 0.8rem;
 
       span:nth-child(1) {
         display: block;
@@ -212,6 +223,7 @@ header {
       right: 0;
       bottom: 0;
       // border: 1px solid blue;
+      overflow-y: scroll;
       z-index: 1;
       padding: 0 1.4rem;
       padding-bottom: 1.4rem;
@@ -262,6 +274,7 @@ header {
           color: $white;
           font-size: 1.1rem;
           font-weight: 500;
+          cursor: pointer;
 
           i {
             margin-right: 0.6rem;
@@ -269,9 +282,11 @@ header {
         }
 
         .navbar__support {
+          width: 100%;
           // border: 1px solid black;
           margin: 1.8rem 0;
           display: flex;
+          flex-wrap: wrap;
           justify-content: space-between;
           align-items: center;
 
@@ -299,6 +314,21 @@ header {
 
   .navbarShadow {
     box-shadow: unset;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .navbar__support {
+    justify-content: space-evenly !important;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .navbar__support {
+    justify-content: center !important;
+  }
+  .navbar__list {
+    overflow-y: scroll;
   }
 }
 </style>
