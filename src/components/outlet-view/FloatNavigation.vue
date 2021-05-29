@@ -93,7 +93,7 @@ export default {};
           display: flex;
           justify-content: center;
           align-items: center;
-          margin-bottom: 0.2rem;
+          margin-bottom: 0.4rem;
 
           img {
             width: 15px;
@@ -123,6 +123,21 @@ export default {};
         p {
           font-weight: 500;
         }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 375px) {
+.float-navigation__items {
+    justify-content: space-between;
+    width: 92%;
+    padding: 0.4rem 1rem;
+
+    .item__link {
+      .item {
+        font-size: 0.6rem;
+        margin: 0.3rem 0.2rem;
       }
     }
   }
