@@ -1,22 +1,61 @@
 <template>
-  <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum unde dolorem laboriosam quae iusto rerum, voluptates eaque modi doloremque ea quibusdam sunt nesciunt accusantium libero voluptas culpa deleniti dolor? Ducimus?</h1>
-  <p>
-    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat dolor expedita autem. Odit vero beatae est hic blanditiis eum consectetur ex eius possimus numquam repellendus, illum fugit tempora? Eligendi voluptate deserunt, fuga culpa eveniet, dolorem eum dolorum porro, hic a quo dolores unde distinctio impedit debitis sed reprehenderit ex quisquam! Voluptatibus, magni hic? Quibusdam possimus nemo sunt neque nostrum tempora veniam, dignissimos ab, eos tempore aperiam, sequi omnis facere. Dolorem, eaque vero? Porro placeat similique facilis aliquam nisi labore nulla quas, mollitia nobis, consectetur minima sit adipisci accusantium soluta assumenda molestiae earum saepe laudantium ut totam praesentium? Deleniti, aperiam omnis?
-  </p>
-    <p>
-    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat dolor expedita autem. Odit vero beatae est hic blanditiis eum consectetur ex eius possimus numquam repellendus, illum fugit tempora? Eligendi voluptate deserunt, fuga culpa eveniet, dolorem eum dolorum porro, hic a quo dolores unde distinctio impedit debitis sed reprehenderit ex quisquam! Voluptatibus, magni hic? Quibusdam possimus nemo sunt neque nostrum tempora veniam, dignissimos ab, eos tempore aperiam, sequi omnis facere. Dolorem, eaque vero? Porro placeat similique facilis aliquam nisi labore nulla quas, mollitia nobis, consectetur minima sit adipisci accusantium soluta assumenda molestiae earum saepe laudantium ut totam praesentium? Deleniti, aperiam omnis?
-  </p>
-    <p>
-    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat dolor expedita autem. Odit vero beatae est hic blanditiis eum consectetur ex eius possimus numquam repellendus, illum fugit tempora? Eligendi voluptate deserunt, fuga culpa eveniet, dolorem eum dolorum porro, hic a quo dolores unde distinctio impedit debitis sed reprehenderit ex quisquam! Voluptatibus, magni hic? Quibusdam possimus nemo sunt neque nostrum tempora veniam, dignissimos ab, eos tempore aperiam, sequi omnis facere. Dolorem, eaque vero? Porro placeat similique facilis aliquam nisi labore nulla quas, mollitia nobis, consectetur minima sit adipisci accusantium soluta assumenda molestiae earum saepe laudantium ut totam praesentium? Deleniti, aperiam omnis?
-  </p>
+  <main class="main main-outlet">
+    <slider-outlet />
+    <tabs-outlet>
+      <tab-outlet title="Passenger Car">
+        <card-passenger-car />
+      </tab-outlet>
+      <tab-outlet title="Commercial Car">
+        <card-commercial-car />
+      </tab-outlet>
+    </tabs-outlet>
+
+    <!--  -->
+    <suzuki-services/>
+
+    <more-information/>
+  </main>
+  <footer class="footer footer-outlet">
+    <p>&copy; 2020 Suzuki Indonesia,</p>
+    <p>All rights reserved.</p>
+  </footer>
+  <float-navigation/>
 </template>
 
 <script>
-export default {
+import SliderOutlet from "@/components/outlet-view/SliderOutlet.vue";
+import TabsOutlet from "@/components/outlet-view/TabsOutlet.vue";
+import TabOutlet from "@/components/outlet-view/TabOutlet.vue";
+import CardCommercialCar from "@/components/outlet-view/CardCommercialCar.vue";
+import CardPassengerCar from "@/components/outlet-view/CardPassengerCar.vue";
+import SuzukiServices from "@/components/outlet-view/SuzukiServices.vue";
+import MoreInformation from '@/components/home-view/MoreInformation.vue'
+import FloatNavigation from '@/components/outlet-view/FloatNavigation.vue'
 
-}
+
+export default {
+  components: {
+    SliderOutlet,
+    TabsOutlet,
+    TabOutlet,
+    CardCommercialCar,
+    CardPassengerCar,
+    SuzukiServices,
+    MoreInformation,
+    FloatNavigation
+  },
+  data() {
+    return {};
+  },
+};
 </script>
 
-<style>
+<style lang="scss">
+.main-outlet {
+  background-color: white;
+}
 
+.footer-outlet {
+  padding-bottom: 8rem;
+}
 </style>
