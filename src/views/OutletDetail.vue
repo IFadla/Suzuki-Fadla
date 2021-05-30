@@ -4,8 +4,10 @@
     <slider-outlet-detail />
     <!-- Headline -->
     <headline />
-    <!-- Tipe Warna -->
 
+    <!-- Tipe Warna -->
+    <color-car />
+    
     <!-- Eksterior -->
     <eksterior />
 
@@ -26,13 +28,14 @@
   </footer>
 
   <!-- Float Navigation -->
-  <float-navigation/>
+  <float-navigation />
 </template>
 
 <script>
 import FloatHeader from "@/components/outlet-detail-view/FloatHeader.vue";
 import SliderOutletDetail from "@/components/outlet-detail-view/SliderOutletDetail.vue";
 import Headline from "@/components/outlet-detail-view/Headline.vue";
+import ColorCar from "@/components/outlet-detail-view/ColorCar.vue";
 import Eksterior from "@/components/outlet-detail-view/Eksterior.vue";
 import Interior from "@/components/outlet-detail-view/Interior.vue";
 import Specification from "@/components/outlet-detail-view/Specification.vue";
@@ -45,12 +48,13 @@ export default {
     FloatHeader,
     SliderOutletDetail,
     Headline,
+    ColorCar,
     Eksterior,
     Interior,
     Specification,
     Price,
     FloatNavigation,
-    MoreInformation
+    MoreInformation,
   },
   data() {
     return {};
