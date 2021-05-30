@@ -1,6 +1,6 @@
 <template>
   <article class="card-passenger">
-    <router-link to="/" class="card__link" v-for="passengerCar in passengerCars" :key="passengerCar.id">
+    <router-link to="/outlet-detail" class="card__link" v-for="passengerCar in passengerCars" :key="passengerCar.id">
       <div class="card">
         <div class="card__image">
           <img

@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Home from '../views/Home.vue'
 import Outlet from '../views/Outlet.vue'
+import OutletDetail from '../views/OutletDetail.vue'
 
 const routes = [
   {
@@ -12,6 +13,11 @@ const routes = [
     path: '/outlet',
     name: 'outlet',
     component: Outlet
+  },
+  {
+    path: '/outlet-detail',
+    name: 'outlet detail',
+    component: OutletDetail
   },
 ]
 
