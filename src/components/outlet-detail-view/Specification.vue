@@ -8,7 +8,7 @@
       <div class="accordion-item" v-for="(item, index) in items" :key="index">
         <div @click="item.show = !item.show" class="accordion-item__title">
           <p>{{ item.title }}</p>
-          <i class="fas fa-sort-down" :class="{active : item.show}"></i>
+          <i class="fas fa-sort-down" :class="{ active: item.show }"></i>
         </div>
         <div v-if="item.show" class="accordion-item__content">
           <div class="side-left">
@@ -100,12 +100,9 @@ export default {
         {
           title: "TRANSMISI",
           content: {
-            left: [
-              "Perbandingan Gigi Akhir", 
-              "Ratio Gear"
-              ],
+            left: ["Perbandingan Gigi Akhir", "Ratio Gear"],
             right: [
-              "3.545 / 2.875", 
+              "3.545 / 2.875",
               "Gear M/T A/T",
               "1st 3.909 2.875",
               "2nd 2.043 1.568",
@@ -113,7 +110,7 @@ export default {
               "4th 1.065 0.697",
               "5th 0.769 N.A",
               "Reverse 3.250 2.300",
-              ],
+            ],
           },
           show: false,
         },
@@ -144,11 +141,6 @@ export default {
       ],
     };
   },
-  // methods: {
-  //   toggleDown() {
-
-  //   }
-  // }
 };
 </script>
 
@@ -156,7 +148,6 @@ export default {
 @import "@/assets/styles/_variables.scss";
 
 .specification {
-  // border: 1px solid magenta;
   background-color: $white;
   margin-top: 1.2rem;
   display: flex;
@@ -171,20 +162,16 @@ export default {
     text-align: center;
     font-size: 1.1rem;
     font-weight: 500;
-    // border: 1px solid magenta;
   }
 
   .accordion {
-    // border: 1px solid magenta;
     width: 100%;
 
     &-item {
       margin-bottom: 1rem;
-    box-shadow: 0px 2px 8px $white1;
-
+      box-shadow: 0px 2px 8px $white1;
 
       &__title {
-        // border: 1px solid black;
         padding: 0.7rem 1rem;
         display: flex;
         justify-content: space-between;
@@ -208,20 +195,15 @@ export default {
 
       &__content {
         padding: 1.5rem 1rem;
-        // border: 1px solid black;
         display: flex;
-        // justify-content: center;
-        // align-items: center;
 
         .side-left,
         .side-right {
           flex: 1;
-          // border: 1px solid blue;
           height: 100%;
 
           p {
             margin-bottom: 0.5rem;
-            // border: 1px solid magenta;
             height: 2.6rem;
           }
         }

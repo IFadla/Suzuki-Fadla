@@ -306,14 +306,12 @@ export default {
 @import "@/assets/styles/_variables.scss";
 
 .color-car {
-  // border: 1px solid magenta;
   margin-top: 1.2rem;
   background-color: $white;
   color: $black;
   padding: 1rem 0;
 
   &__title {
-    // border: 1px solid black;
     text-align: center;
     font-size: 1.2rem;
     font-weight: 500;
@@ -321,7 +319,6 @@ export default {
   }
 
   &__header {
-    // border: 1px solid black;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -332,7 +329,6 @@ export default {
       text-align: center;
       font-size: 0.9rem;
       color: $blue2;
-      // border: 1px solid magenta;
       padding: 0.5rem;
       border-bottom: 3px solid $white1;
 
@@ -348,7 +344,6 @@ export default {
     min-height: 182px;
     max-height: auto;
     margin: 1rem auto;
-    // border: 1px solid black;
 
     img {
       width: 100%;
@@ -358,12 +353,10 @@ export default {
   &__color {
     padding: 0.9rem 1rem;
     padding-top: 0;
-    // border: 1px solid black;
     font-size: 0.9rem;
     text-align: center;
 
     .color-picker {
-      // border: 1px solid magenta;
       display: flex;
       justify-content: center;
       margin-top: 0.8rem;

@@ -55,9 +55,6 @@ export default {
 @import "@/assets/styles/_variables.scss";
 
 .main {
-  // height: 100vh;
-  // border: 1px solid magenta;
-
   .backdrop {
     background-color: $blue;
     height: 211px;
@@ -68,7 +65,6 @@ export default {
 
     &__title {
       width: 80%;
-      // border: 1px solid magenta;
       display: flex;
       justify-content: center;
       flex-direction: column;

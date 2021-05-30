@@ -62,7 +62,6 @@ export default {
 
 .price {
   margin: 1.2rem 0;
-  // border: 1px solid black;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -75,12 +74,10 @@ export default {
     text-align: center;
     font-size: 1.1rem;
     font-weight: 500;
-    // border: 1px solid magenta;
   }
 
   .tag-price {
     width: 100%;
-    // border: 1px solid magenta;
     margin-bottom: 1rem;
     display: flex;
     padding: 0.8rem 1rem;

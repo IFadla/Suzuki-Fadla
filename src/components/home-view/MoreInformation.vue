@@ -66,7 +66,6 @@ export default {};
 
   .nav-information {
     display: flex;
-    // border: 1px solid magenta;
     border-bottom: 1px solid $white1;
     justify-content: center;
     flex-wrap: wrap;
@@ -85,7 +84,6 @@ export default {};
   }
 
   &__contact {
-    // border: 1px solid magenta;
     margin-top: 1.4rem;
     padding-bottom: 1rem;
     margin-bottom: 2rem;
@@ -138,7 +136,6 @@ export default {};
   }
 
   &__support {
-    // border: 1px solid magenta;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -149,7 +146,7 @@ export default {};
     p.title,
     p.download {
       font-weight: 800;
-      margin-bottom: .8rem;
+      margin-bottom: 0.8rem;
     }
 
     img.first {

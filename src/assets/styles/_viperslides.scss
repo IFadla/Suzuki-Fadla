@@ -215,7 +215,6 @@
 }
 
 .vueperslides__bullet--active .default {
-  /* border-width: 6px; */
   background-color: white;
 }
 
@@ -281,7 +280,6 @@
 
 .vueperslides {
   position: relative;
-  /* border: 1px solid magenta; */
 }
 
 .vueperslides--fixed-height .vueperslide, .vueperslides--fixed-height .vueperslides__inner, .vueperslides--fixed-height .vueperslides__parallax-wrapper {
@@ -399,7 +397,6 @@
   outline: none;
   z-index: 0;
   line-height: 1;
-  /* border: 1px solid magenta; */
 }
 
 .vueperslides__arrow, .vueperslides__arrow svg {
@@ -443,7 +440,6 @@
   width: 60px;
   margin-bottom: 1rem;
   border-radius: .2rem;
-  /* border: 1px solid magenta; */
   background-color: rgba(0, 0, 0, 0.5) !important;
   z-index: 0;
 }

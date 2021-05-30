@@ -13,10 +13,6 @@
       >
         <p>{{ title }}</p>
       </div>
-      <!-- 
-      <div class="tab">
-        <p>Commercial Car</p>
-      </div> -->
     </div>
 
     <!-- tab here -->
@@ -56,7 +52,6 @@ export default {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  // border: 1px solid magenta;
 
   &__header {
     width: 100%;
@@ -97,7 +92,6 @@ export default {
 
   .wrapper__slot {
     width: 100%;
-    // border: 1px solid red;
   }
 
   .button-tabs {

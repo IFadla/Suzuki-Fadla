@@ -1,12 +1,14 @@
 <template>
   <article class="card-passenger">
-    <router-link to="/outlet-detail" class="card__link" v-for="passengerCar in passengerCars" :key="passengerCar.id">
+    <router-link
+      to="/outlet-detail"
+      class="card__link"
+      v-for="passengerCar in passengerCars"
+      :key="passengerCar.id"
+    >
       <div class="card">
         <div class="card__image">
-          <img
-            :src="passengerCar.image"
-            alt=""
-          />
+          <img :src="passengerCar.image" alt="" />
         </div>
 
         <div class="card__information">
@@ -30,13 +32,15 @@ export default {
       passengerCars: [
         {
           id: 1,
-          image: 'https://sibaturaspirman.github.io/suzuki/assets/images/content/mobil-5.png',
+          image:
+            "https://sibaturaspirman.github.io/suzuki/assets/images/content/mobil-5.png",
           title: "New Carry Pick-Up",
           price: "Rp 145.600.000",
         },
         {
           id: 2,
-          image: 'https://sibaturaspirman.github.io/suzuki/assets/images/content/mobil-6.png',
+          image:
+            "https://sibaturaspirman.github.io/suzuki/assets/images/content/mobil-6.png",
           title: "New Carry Luxury",
           price: "Rp 159.100.000",
         },
@@ -53,7 +57,6 @@ export default {
   padding: 0 1rem;
   padding-top: 2rem;
   padding-bottom: 0rem;
-  // border: 1px solid black;
 
   .card__link {
     text-decoration: none;
@@ -62,13 +65,11 @@ export default {
   .card {
     width: 100%;
     display: flex;
-    // border: 1px solid black;
     border-bottom: 2px solid $white1;
     padding-bottom: 1.5rem;
     margin-bottom: 1.5rem;
 
     &__image {
-      // border: 1px solid magenta;
       overflow: hidden;
       max-width: 175px;
       height: 115px;
@@ -87,7 +88,6 @@ export default {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      // border: 1px solid magenta;
 
       p.title {
         font-weight: 800;

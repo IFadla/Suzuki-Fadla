@@ -63,7 +63,6 @@ export default {
 
 .card-information {
   padding: 0 1rem;
-  // border: 1px solid magenta;
   margin-top: -70px;
   padding-bottom: 2rem;
   display: flex;
@@ -85,7 +84,6 @@ export default {
     &__image {
       width: 100%;
       height: 214px;
-      // border: 1px solid blue;
 
       img {
         width: 100%;
@@ -96,7 +94,6 @@ export default {
 
     &__information {
       padding: 1rem;
-      // border: 1px solid magenta;
       display: flex;
       flex-direction: column;
       align-items: flex-start;

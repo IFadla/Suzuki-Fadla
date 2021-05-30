@@ -89,7 +89,6 @@ export default {
 @import "@/assets/styles/_variables.scss";
 
 header {
-  // border: 1px solid magenta;
   position: fixed;
   top: 0;
   left: 0;
@@ -102,7 +101,6 @@ header {
     width: 0;
     height: 100vh;
     top: 0;
-    // left: 0;
     right: 0;
     bottom: 0;
     background-color: unset;
@@ -117,7 +115,6 @@ header {
   }
 
   .navbar {
-    // border: 1px solid magenta;
     padding: 0.8rem 1rem;
     display: flex;
     justify-content: space-between;
@@ -130,7 +127,6 @@ header {
     }
 
     &__brand {
-      // border: 1px solid $blue;
       display: flex;
       align-items: center;
 
@@ -153,7 +149,6 @@ header {
     &__burger {
       width: 35px;
       height: 35px;
-      // border: 1px solid magenta;
       border-radius: 50px;
       background-color: $blue;
       display: flex;
@@ -213,10 +208,8 @@ header {
       background-color: $white;
       position: fixed;
       top: 0;
-      // left: 0;
       right: 0;
       bottom: 0;
-      // border: 1px solid blue;
       overflow-y: scroll;
       z-index: 1;
       padding: 0 1.4rem;
@@ -228,12 +221,9 @@ header {
       transition: all 0.5s ease;
 
       .navbar__menu {
-        // border: 1px solid red;
         padding-top: 4.8rem;
 
         .navbar__items {
-          // border: 1px solid blue;
-
           .navbar__link {
             color: $black;
             font-size: 1.2rem;
@@ -277,7 +267,6 @@ header {
 
         .navbar__support {
           width: 100%;
-          // border: 1px solid black;
           margin: 1.8rem 0;
           display: flex;
           flex-wrap: wrap;
@@ -286,17 +275,14 @@ header {
 
           img:nth-child(1) {
             width: 5rem;
-            // border: 1px solid magenta;
           }
           img:nth-child(2) {
             width: 11.8rem;
-            // border: 1px solid magenta;
           }
         }
       }
 
       .navbar__mark {
-        // border: 1px solid black;
         font-size: 0.9rem;
       }
     }

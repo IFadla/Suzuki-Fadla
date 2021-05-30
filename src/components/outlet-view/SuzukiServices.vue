@@ -53,7 +53,6 @@ export default {};
 @import "@/assets/styles/_variables.scss";
 
 .suzuki-services {
-  // border: 1px solid cyan;
 
   .service {
     position: relative;
@@ -84,7 +83,6 @@ export default {};
       bottom: 0;
       left: 0;
       right: 0;
-      // border: 1px solid magenta;
 
       display: flex;
       justify-content: center;
@@ -93,7 +91,6 @@ export default {};
 
       .service__info {
         width: 80%;
-        // border: 1px solid black;
         text-align: center;
         color: $white;
 

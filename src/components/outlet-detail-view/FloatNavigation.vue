@@ -116,15 +116,12 @@ export default {
   right: 0;
   z-index: 2;
   background-color: $shadow2;
-  // border: 1px solid magenta;
   display: flex;
   justify-content: center;
   align-items: center;
-  // display: none;
 }
 
 .wrapper-form {
-  // border: 1px solid magenta;
   padding: 1rem;
   color: $black;
   position: fixed;
@@ -145,25 +142,22 @@ export default {
   flex-direction: column;
 
   &__head {
-    // border: 1px solid black;
     display: flex;
     justify-content: space-between;
     font-size: 1.2rem;
     margin-bottom: 1rem;
     align-items: center;
     border-bottom: 1px solid $white1;
-    padding-bottom: .5rem;
+    padding-bottom: 0.5rem;
     font-weight: 500;
   }
 
   .form {
-    // border: 1px solid black;
     margin-bottom: 1rem;
     padding-bottom: 1rem;
     border-bottom: 1px solid $white1;
 
     &__info {
-      // border: 1px solid blue;
       margin-bottom: 1rem;
       display: flex;
       flex-direction: column;
@@ -185,7 +179,6 @@ export default {
 
     &__dropdowns {
       display: flex;
-      // border: 1px solid magenta;
       justify-content: space-between;
       align-items: center;
 
@@ -194,7 +187,6 @@ export default {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        // border: 1px solid red;
         width: 48%;
 
         label {
@@ -235,18 +227,15 @@ export default {
 }
 
 .float-navigation {
-  // border: 1px solid magenta;
   position: fixed;
   bottom: 0;
   left: 0;
   right: 0;
-  // z-index: 0;
   margin-bottom: 1rem;
   display: flex;
   justify-content: center;
 
   &__items {
-    // border: 1px solid black;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -271,7 +260,6 @@ export default {
 
       .item {
         color: $black;
-        // border: 1px solid cyan;
         display: flex;
         flex-direction: column;
         justify-content: center;

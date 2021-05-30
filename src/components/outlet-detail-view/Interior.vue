@@ -22,7 +22,6 @@ export default {};
 @import "@/assets/styles/_variables.scss";
 
 .interior {
-  // border: 1px solid magenta;
   width: 100%;
   background-color: $blue;
   color: $white;
@@ -41,7 +40,6 @@ export default {};
 
   &__gallery {
     width: 100%;
-    // border: 1px solid cyan;
 
     img {
       width: 100%;
@@ -51,7 +49,7 @@ export default {};
   &__button {
     width: 70%;
     border: 1px solid $white;
-    padding: .5rem 1rem;
+    padding: 0.5rem 1rem;
     text-align: center;
     margin: 1.5rem;
   }

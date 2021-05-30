@@ -1,24 +1,23 @@
 <template>
-<div class="wrapper-slide">
-<vueper-slides
-    ref="myVueperSlides"
-    autoplay
-    :pause-on-hover="pauseOnHover"
-    @autoplay-pause="internalAutoPlaying = false"
-    @autoplay-resume="internalAutoPlaying = true"
-    class="margintop"
-  >
-    <vueper-slide
-      v-for="slide in slides"
-      :key="slide.id"
-      :image="slide.image"
-    />
-    <template v-slot:pause>
-      <i class="icon pause_circle_outline"></i>
-    </template>
-  </vueper-slides>
-</div>
-  
+  <div class="wrapper-slide">
+    <vueper-slides
+      ref="myVueperSlides"
+      autoplay
+      :pause-on-hover="pauseOnHover"
+      @autoplay-pause="internalAutoPlaying = false"
+      @autoplay-resume="internalAutoPlaying = true"
+      class="margintop"
+    >
+      <vueper-slide
+        v-for="slide in slides"
+        :key="slide.id"
+        :image="slide.image"
+      />
+      <template v-slot:pause>
+        <i class="icon pause_circle_outline"></i>
+      </template>
+    </vueper-slides>
+  </div>
 </template>
 
 <script>
@@ -60,13 +59,10 @@ export default {
 <style lang="scss">
 @import "@/assets/styles/_viperslides.scss";
 .wrapper-slide {
-  // border: 1px solid magenta;
-  
   .margintop {
-  z-index: -1 !important;
+    z-index: -1 !important;
 
-  margin-top: 73px;
+    margin-top: 73px;
+  }
 }
-}
-
 </style>

@@ -49,7 +49,6 @@ export default {};
 @import "@/assets/styles/_variables.scss";
 
 .header-outlet-detail {
-  // border: 1px solid magenta;
   position: fixed;
   top: 0;
   display: flex;
@@ -61,11 +60,10 @@ export default {};
   padding: 0 1rem;
 
   .brand {
-    // border: 1px solid magenta;
-    padding: .6rem 1rem;
+    padding: 0.6rem 1rem;
 
     &__title {
-      font-size: .9rem;
+      font-size: 0.9rem;
       font-weight: 500;
     }
   }
@@ -85,10 +83,9 @@ export default {};
       align-items: center;
 
       .header-nav__item {
-        // border: 1px solid magenta;
         padding: 0.4rem 1rem;
         border-bottom: 2px solid $white;
-        margin-right: .5rem;
+        margin-right: 0.5rem;
 
         &--active {
           color: $blue;

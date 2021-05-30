@@ -33,7 +33,6 @@ export default {};
 @import "@/assets/styles/_variables.scss";
 
 .headline {
-  // border: 1px solid magenta;
   background-color: $blue;
   padding: 1.8rem 1rem;
   color: $white;
@@ -59,7 +58,6 @@ export default {};
 
   &__desc {
     width: 98%;
-    // border: 1px solid black;
     text-align: center;
     padding-bottom: 1rem;
     border-bottom: 1px solid $blue2;
@@ -74,7 +72,6 @@ export default {};
     display: flex;
     justify-content: center;
     align-items: center;
-    // border: 1px solid magenta;
     width: 100%;
 
     .button__unduh,

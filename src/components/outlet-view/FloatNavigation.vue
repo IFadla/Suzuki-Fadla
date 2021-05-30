@@ -52,7 +52,6 @@ export default {};
 @import "@/assets/styles/_variables.scss";
 
 .float-navigation {
-  // border: 1px solid magenta;
   position: fixed;
   bottom: 0;
   left: 0;
@@ -63,7 +62,6 @@ export default {};
   justify-content: center;
 
   &__items {
-    // border: 1px solid black;
     display: flex;
     justify-content: center;
     width: auto;
@@ -77,7 +75,6 @@ export default {};
 
       .item {
         color: $black;
-        // border: 1px solid cyan;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -129,7 +126,7 @@ export default {};
 }
 
 @media only screen and (max-width: 375px) {
-.float-navigation__items {
+  .float-navigation__items {
     justify-content: space-between;
     width: 92%;
     padding: 0.4rem 1rem;
