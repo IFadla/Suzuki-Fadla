@@ -80,12 +80,6 @@ export default {
   methods: {
     showList() {
       this.isShowList = !this.isShowList;
-
-      if (this.isShowList) {
-        console.log("show list");
-      } else {
-        console.log("hide list");
-      }
     },
   },
 };

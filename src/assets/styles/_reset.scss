@@ -23,6 +23,10 @@
   background: $blue1;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
   padding-top: 62px;

@@ -1,14 +1,14 @@
 <template>
   <div id="Specification" class="specification">
     <div class="specification__header">
-      <p>Spesifikasi</p>
+      <p>SPESIFIKASI</p>
     </div>
 
     <div class="accordion">
       <div class="accordion-item" v-for="(item, index) in items" :key="index">
         <div @click="item.show = !item.show" class="accordion-item__title">
           <p>{{ item.title }}</p>
-          <i class="fas fa-sort-down"></i>
+          <i class="fas fa-sort-down" :class="{active : item.show}"></i>
         </div>
         <div v-if="item.show" class="accordion-item__content">
           <div class="side-left">
@@ -41,6 +41,7 @@ export default {
   components: {},
   data() {
     return {
+      isDown: true,
       items: [
         {
           title: "DIMENSI",
@@ -143,6 +144,11 @@ export default {
       ],
     };
   },
+  // methods: {
+  //   toggleDown() {
+
+  //   }
+  // }
 };
 </script>
 
@@ -164,6 +170,7 @@ export default {
     padding: 1.4rem;
     text-align: center;
     font-size: 1.1rem;
+    font-weight: 500;
     // border: 1px solid magenta;
   }
 
@@ -173,6 +180,8 @@ export default {
 
     &-item {
       margin-bottom: 1rem;
+    box-shadow: 0px 2px 8px $white1;
+
 
       &__title {
         // border: 1px solid black;
@@ -191,26 +200,35 @@ export default {
         i {
           font-size: 1.2rem;
         }
+
+        i.active {
+          transform: rotate(180deg);
+        }
       }
 
       &__content {
         padding: 1.5rem 1rem;
         // border: 1px solid black;
         display: flex;
-        justify-content: center;
-        align-items: center;
+        // justify-content: center;
+        // align-items: center;
 
         .side-left,
         .side-right {
           flex: 1;
           // border: 1px solid blue;
+          height: 100%;
 
           p {
             margin-bottom: 0.5rem;
+            // border: 1px solid magenta;
+            height: 2.6rem;
           }
         }
 
         .side-left {
+          flex: 1;
+          padding-right: 1rem;
           font-weight: 500;
         }
       }

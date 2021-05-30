@@ -10,29 +10,29 @@
           <p class="item">Overview</p>
         </div>
       </a>
-      <a href="#" class="header-nav__link">
+      <a href="#ColorCar" class="header-nav__link">
         <div class="header-nav__item">
           <p class="item">Tipe & Warna</p>
         </div>
       </a>
-      <a href="#" class="header-nav__link">
+      <a href="#Eksterior" class="header-nav__link">
         <div class="header-nav__item">
           <p class="item">Eksterior</p>
         </div>
       </a>
-      <a href="#" class="header-nav__link">
+      <a href="#Interior" class="header-nav__link">
         <div class="header-nav__item">
           <p class="item">Interior</p>
         </div>
       </a>
 
-      <a href="#" class="header-nav__link">
+      <a href="#Specification" class="header-nav__link">
         <div class="header-nav__item">
           <p class="item">Spesifikasi</p>
         </div>
       </a>
 
-      <a href="#" class="header-nav__link">
+      <a href="#Price" class="header-nav__link">
         <div class="header-nav__item">
           <p class="item">Harga</p>
         </div>
